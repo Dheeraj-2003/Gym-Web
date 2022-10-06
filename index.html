@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS Fitness Centre</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+        font-family: 'Baloo 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg - Copy.jpg');
+        height: 701px;
+    }
+    .left{
+        display: inline-block;
+        position: absolute; 
+        left: 50px;
+        top: 15px;
+        border: 2px ;
+       
+
+    }
+    .left img{
+        width: 70px;
+        
+    }
+    .left div{
+        text-align: center;
+        font-size: 17px;
+        line-height: 1px;
+
+    }
+    .mid{
+        display: block;
+        width: 60%;
+        margin: 12px auto;
+        border: 2px solid black;
+        position: sticky;
+        top: 0px;
+
+    }
+    .right{
+        position: absolute;
+        right: 30px; 
+        top: 20px;
+        border: 2px solid black;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 33px 33px;
+       
+    }
+    .navbar li a:hover {
+        color: grey;
+        text-decoration: underline;
+    }
+    .btn{
+        font-family: 'Baloo 2', cursive;
+        margin: 0px 5px;
+        background-color: white;
+        color: black;
+        padding: 2px 10px;
+        border: 3px solid white;
+        border-radius: 15px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: black;
+        color: white;
+
+    }
+    .container{
+        border: 2px,black;
+        margin: 100px 100px;
+        padding: 40px 100px;
+        width: 300px;
+
+    }
+    .formgroup input{
+        font-family: 'Baloo 2', cursive;
+        font-style: italic;
+        text-align: center;
+        display: block;
+        width:200px;
+        padding:5px;
+        margin: 2px auto;
+        border: 2px;
+        border-radius: 10px;
+       
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 30%;
+        margin: auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+           <a href="#" > <img src="/img/logo3.png" alt=""></a>
+        <div>DS Fitness</div>
+             
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active" >Home</a></li>
+                <li><a href="#" class="active" >Fitness calculator</a></li>
+                <li><a href="#" class="active" >Gallery</a></li>
+                <li><a href="#" class="active" >About us</a></li>
+                <li><a href="#" class="active" >Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Directions</button><button class="btn">Call Us</button>
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Muscle Up Now!!! </h1>
+        <form action="none.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Contact No.">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Email ID">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Height">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Adress">
+            </div>
+        </br>
+           <button class="btn" id="enroll">Enroll</button>
+        </form>
+    </div>
+</body>
+</html>
